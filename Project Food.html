@@ -1,0 +1,110 @@
+<html>
+  <head>  
+      <link rel="stylesheet" href="style.css">
+      <script src="app.js"></script>
+  </head>
+  <body>
+      <div class="box">
+          <ul>
+              <li><a href="Project Food.html">Home</a></li>
+              <li><a href="recentrecipes.html">Recent Recipes</a></li>
+              <li><a href="specials.html">Specials</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="">Contact</a></li>
+          </ul> 
+      </div>
+      <div class="container">
+          <div class="para">
+              <p><h1 class="welcome">Welcome to</h1>
+              <h1>TEMPTING FOOD RECIPES</h1>
+              </p>
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <form class="example" action="action_page.php">
+              <input type="text" placeholder="Search recipes.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+          </div>
+      </div>
+
+  <!-- slide show -->
+<div id="slide-show">
+  <h3>Most<br>Searched<br>Recipes</h3>
+<div class="slideshow-container">
+ <div class="mySlides fade">
+  <a href ="bibimbap.html"><img src="Bibimbap.jpg">
+    <div class="text">BIBIMBAP</div></a>
+</div>
+<div class="mySlides fade">
+  <a href ="Tteobokki.html"><img src="teokbokki.jpg">
+    <div class="text">TTEOBOKKI</div></a>
+</div>
+<div class="mySlides fade">
+  <a href ="Chicken Fajitas.html"><img src="Chicken fajitas.jpg">
+    <div class="text">CHICKEN FAJITAS</div></a>
+</div>
+<div class="mySlides fade">
+  <a href ="Japchae.html"><img src="japchae.jpg">
+    <div class="text">JAPCHAE</div></a>
+</div>
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+<div class="foodcollection"> 
+      <h2>Food Recipes Collection:</h2>
+      </div>
+      <div class="images">
+      <a href ="bibimbap.html"><img src="Bibimbap.jpg"><p>BIBIMBAP</p></a>
+      <a href ="Chicken biryani.html"><img src="Chicken biryani.jpg"><p>CHICKEN BIRYANI</p></a>
+      <a href ="Chicken Fajitas.html"><img src="Chicken fajitas.jpg"><p>CHICKEN FAJITAS</p></a>
+      <a href ="Chicken soup.html"><img src="Chicken soup.jpg"><p>CHICKEN SOUP</p></a>
+      <a href ="Chicken Tadka.html"><img src="chicken tadka.jpg"><p>CHICKEN TADKA</p></a>
+      <a href ="Chicken tikka Masala.html"><img src="tikka.jpg"><p>CHICKEN TIKKA</p></a>
+      <a href ="Egg rice.html"><img src="Tomato and Egg rice.jpg"><p>TOMATO AND EGG RICE</p></a>
+      <a href ="Homemade Ramen.html"><img src="ramyeon.jpg"><p>RAMYEON</p></a>
+      <a href ="Japchae.html"><img src="japchae.jpg"><p>JAPCHAE</p></a>
+      <a href ="kimbap recipes.html"><img src="kimbap.jpg "><p>KIMBAP</p></a>
+      <a href ="Kimchi fried rice.html"><img src="kimchi fried rice.jpg"><p>KIMCHI FIRED RICE</p></a>
+      <a href ="Maxican Tacos.html"><img src="maxican tacos.jpg"><p>MAXICAN TACOS</p></a>
+      <a href ="Traditional napa cabbage kimchi.html"><img src="kimchi.jpg"><p>KIMCHI</p></a>
+      <a href ="Tteobokki.html"><img src="teokbokki.jpg"><p>TTEOBOKKI</p></a>
+      </div>
+
+      <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>\
+          <hr>
+          <div class="about">
+            <h2>Tempting Food Recipes</h2>
+              About<br>
+              Recipes<br>
+              Recent Recipes<br>
+              Specials<br>
+              Most searched recipes
+            </div>
+            <marquee><p><H3 CLASS="LAST">Copyright © 2024 CHAN COLLEGE PROJECT | All rights reserved.</H3></p></marquee>
+  </body>
+</html>

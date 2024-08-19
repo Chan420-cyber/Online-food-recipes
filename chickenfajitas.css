@@ -1,0 +1,50 @@
+ 
+.text{
+    color: rgb(29, 27, 27);
+    padding: 20px;
+}
+
+.box ul li{
+    width:150px;
+    float:left;
+    margin: 10px auto;
+    text-align: center;
+    Display: flex;
+    list-style:none;
+}
+.box ul li a{ text-decoration: none;
+    color: rgb(29, 27, 27);}
+
+    .box ul li:hover{transition: 0.5s;}
+    .box ul li a:hover{ color:rgb(246, 182, 63);}
+   
+.box{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+    background-image:url("chickenfajitasingredients.jpg");
+    width: 90%;
+    height:400px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.para h1{ 
+    text-decoration: none;
+color:rgb(54, 55, 54);
+margin-bottom: -20px;
+padding-bottom: 0;
+}
+.Chickenfajitas{
+    height: 300px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

@@ -1,0 +1,189 @@
+.box ul li{
+    width:150px;
+    float:left;
+    margin: 10px auto;
+    text-align: center;
+    Display: flex;
+    list-style:none;
+}
+.box ul li a{ text-decoration: none;
+    color:white;
+  }
+
+.box ul li:hover{transition: 0.5s;
+}
+
+.box ul li a:hover{ color:rgb(246, 182, 63);
+}
+
+body{
+background-image:url("background3.jpg");
+background-color: black;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container{
+    background-image:url("background13.jpg");
+    width: 90%;
+    height:500px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+/* to make your item inside the container center */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.para h1{ text-decoration: none;
+color:rgb(253, 253, 237);
+margin-bottom: -20px;
+padding-bottom: 0;
+}
+
+.search-bar input{
+
+color:beige;
+padding: 0 10px;
+width:400px;
+margin-top:28px;
+}
+
+.popular{
+color: rgb(243, 238, 238);
+text-align: center;
+}
+/* /Bibimbap notes html/ */
+.note{
+text-align: right;
+color: rgb(243, 238, 238);
+}
+/* /kimbap notes html/ */
+.kimbap{
+text-align: left;
+color: rgb(147, 227, 56);
+}
+
+.para{
+display: grid;
+place-items: center;
+} 
+
+.foodcollection{
+  color:whitesmoke;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+/* /image edit/ */
+img{
+ width: 200px;
+height: 200px;
+object-fit: cover;
+}
+.images{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.images a{
+cursor: pointer;
+margin: 10px;
+transition: 400ms;
+}
+
+.images a:hover{
+transform: scale(1.03);
+}
+
+.images p{
+    color: rgb(247, 244, 240);
+    text-decoration: none;
+    text-align: center;
+}
+/* slide-show */
+
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 350px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow-container img{
+    object-fit:cover;
+    height: 200px;
+    width: 450px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 110px;
+  bottom: 8px;
+  width: 100%;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: slide;
+  animation-duration: 2s;
+}
+
+@keyframes slide {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+h3{
+    color:#f2f2f2;
+}
+
+#slide-show{
+    padding: 30px;
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color:#050505;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+    padding-top: 100px;
+}
+
+.RecipeCollection{
+  color:  rgb(247, 244, 240);
+  }
+
+.about{
+    color:  rgb(247, 244, 240);
+}
+
+.LAST{
+  color: bisque;
+}
+
+ 
